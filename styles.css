@@ -3,9 +3,10 @@
     --button: #45804b;
 
 }
+
 body {
     margin:0;
-    font-family: Roboto, Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Arial, sans-serif;
 } 
 header{
     display:flex;
@@ -22,7 +23,7 @@ header{
     background-image: url('images/2.png'); 
     background-size: cover; 
     background-repeat: no-repeat;
-    background-position: center;    
+    background-position: center;   
 }
 
 .menu{
@@ -52,12 +53,15 @@ li:last-child {
 
 }
 .navLinks a.active{   
-    background-color: #417d47;   
+    background-color: #5ea465; 
+    border-radius: 5px;
+    color: white;
 }
 
 .navLinks a:hover:not(.active){
     color: #417d47;
     font-size: 17px;
+    
 }
 
 .products{
@@ -155,17 +159,22 @@ button:hover {
 
     .navLinks li {
         margin: 10px 0;
+    
     }
 
     
 }
 .contact-form{
     max-width: 600px;
-    background-color:#eff4f0;
-    border: 1px solid #ddd;
+   
     border-radius: 5px;
     margin: 20px auto;
     padding: 20px;
+
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
     
    
 
@@ -192,6 +201,7 @@ button:hover {
     
   }
  button {
+
     margin: auto;
     display: block;
 
@@ -266,7 +276,7 @@ footer{
     height: 250px;
     object-fit: cover;
 }
-.notification-conainer{
+.notification-container{
     position: fixed;
     top: 10px;
     right: 10px;
@@ -279,4 +289,54 @@ footer{
     padding: 10px 20px;
     margin: 5px 0;
     border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    .contact-form {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .contact-form label {
+        font-size: 0.9rem;
+    }
+
+    .contact-form textarea,
+    .contact-form input {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+
+    .contact-form button {
+        width: 100%;
+        padding: 10px;
+        font-size: 1rem;
+    }
+}
+@media (max-width:768px){
+    .gallery{
+        flex-direction: column;
+    }
+    .item{
+            width:80%;
+            align-items:center;
+            margin: 20px auto;
+            
+           
+        }
+    .arrow,
+    .left-arrow,
+    .right-arrow{
+        display: none;
+    }
+}
+@media(max-width:768px){
+    button{
+        width: 100%;
+        margin-bottom: 20px;
+    .products{
+            grid-template-columns: 1fr;
+        }
+
+    }
 }

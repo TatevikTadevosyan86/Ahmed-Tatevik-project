@@ -14,14 +14,25 @@ contactForm.addEventListener("submit", function(event) {
         alert("Please fill out all fields.");
         return;
     } 
-    console.log("Name:", name);
-    console.log("Email:", email);
-    console.log("Phone:", phone);
-    console.log("Message:", message);
+    const formInfo = new FormData();
+    formInfo.append("Name:", name);
+    formInfo.append("Email:", email);
+    formInfo.append("Phone:", phone);
+    formInfo.append("Message:", message);
 
-        // Reset the form
-    contactForm.reset();
-        alert("Your message has been sent!");
+    const xhr = new XMLHttpRequest();
+    xhr.open("POST", "http://localhost:52330/About.html", true);
+    xhr.onload= function(){
+        if(xhr.status=== 200){
+            alert("Your message has been sent!");
+            contactForm.reset();
+        }
+        else{
+            alert("There was a error sneding your message")
+        }
+    };
+
+     xhr.send(formInfo)   
 
     }); 
 }); 

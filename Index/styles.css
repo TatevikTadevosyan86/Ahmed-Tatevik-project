@@ -1,9 +1,10 @@
+/* Variabler för färger */
 :root{
     --hover: rgb(136, 181, 133);
     --button: #45804b;
 
 }
-
+/* Grundläggande stildirektiv för hela sidan */
 body {
     margin:0;
     font-family: Arial, sans-serif;
@@ -20,7 +21,7 @@ header{
 .logo {
     width: 100px; 
     height: 70px; 
-    background-image: url('images/2.png'); 
+    background-image: url('../images/2.png'); 
     background-size: cover; 
     background-repeat: no-repeat;
     background-position: center;   

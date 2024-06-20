@@ -5,32 +5,38 @@
     <meta charset="UTF-8">
     <title>Courses - Soap Shop</title>
     <link rel="stylesheet" href="courses.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../Index/styles.css">
 </head>
 <body>
+    <!-- Logotyp som länkar till startsidan -->
     <header>
-        <div class="logo">
-        </div>
+        <a href="../index/index.html">
+            <div class="logo"></div>
+        </a>
+         <!-- Navigationsmeny -->
         <nav class="menu">
+            <!-- Hamburger-meny för mobil vy -->
             <div id="hamburger" class="hamburger">
                 <span></span>
                 <span></span>
                 <span></span>
             </div>
+            <!-- Länklista för navigering -->
             <ul id="navLinks" class="navLinks">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="shop.html">Shop</a></li>
+                <li><a href="../Index/index.html">Home</a></li>
+                <li><a href="../About/about.html">About</a></li>
+                <li><a href="../Shop/shop.html">Shop</a></li>
                 <li><a class="active" href="courses.html">Courses</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="../Contact/contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
     <main>
+         <!-- Sektion för kursinformation -->
         <section class="course">
             <div class="course-container">
                 <div class="course-image">
-                    <img src="images/athome.png" alt="Beauty at Home">
+                    <img src="../images/athome.png" alt="Beauty at Home">
                 </div>
                 <div class="course-content">
                     <h2>Beauty at Home</h2>
@@ -38,17 +44,20 @@
                     <p>This course covers advanced beauty techniques that you can do at home, including skincare routines, natural product creation, and more. You'll learn how to make your own face masks, scrubs, and lotions using ingredients readily available at home.</p>
                     <p>We will also dive into the benefits of various natural ingredients and how they can improve your skin's health and appearance. Weekly assignments will help you practice and master these techniques.</p>
                     <p>Join us in exploring the world of natural beauty and take control of your skincare regimen with confidence. By the end of this course, you will have a thorough understanding of how to maintain healthy, glowing skin using homemade products.</p>
-                    <button class="read-more" onclick="showMoreInfo('more-info1'); hideButton(this);">READ MORE</button>
+                    <!-- Knapp för att visa mer information -->
+                     <button class="read-more" onclick="showMoreInfo('more-info1'); hideButton(this);">READ MORE</button>
+                    <!-- Dold sektion med ytterligare information -->
                     <div id="more-info1" class="more-info">
                     <p>Discover the secrets of natural beauty with our comprehensive online course. Learn how to create your own skincare products using natural ingredients available at home.</p>
                     </div>
                 </div>
             </div>
         </section>
+        <!-- Sektion för nästa kurs -->
         <section class="course">
             <div class="course-container">
                 <div class="course-image">
-                    <img src="images/cosmo.jpg" alt="Cosmetology">
+                    <img src="../images/cosmo.jpg" alt="Cosmetology">
                 </div>
                 <div class="course-content">
                     <h2>Cosmetology</h2>
@@ -65,6 +74,7 @@
             </div>
         </section>
     </main>
+    <!-- Kontaktinformation i sidfoten -->
     <footer>
         <div>
             <h2 style="margin-left: 5px;">Contact Us</h2>

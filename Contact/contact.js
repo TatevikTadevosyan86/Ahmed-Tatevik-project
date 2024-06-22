@@ -23,18 +23,16 @@ contactForm.addEventListener("submit", function(event) {
     formInfo.append("Message:", message);
     // Skapa ett XMLHttpRequest-objekt för att skicka data
     const xhr = new XMLHttpRequest();
-    xhr.open("POST", "http://localhost:52330/About.html", true);
-    xhr.onload= function(){
-        if(xhr.status=== 200){
+    xhr.open("POST", "http://localhost:52330/About/About.html", true);
+    xhr.onload = function() {
+        if (xhr.status === 200) {
             alert("Your message has been sent!");
             contactForm.reset();
-        }
-        else{
-            alert("There was a error sneding your message")
+        } else {
+            alert("There was an error sending your message.");
         }
     };
 
-     xhr.send(formInfo)   
-
-    }); 
-}); 
+    xhr.send(formInfo);
+});
+});

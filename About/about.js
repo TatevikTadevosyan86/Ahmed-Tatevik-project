@@ -4,10 +4,7 @@ function showMoreInfo() {
     if (moreInfo.style.display === "none" || moreInfo.style.display === "") {
          // Om elementet är dolt, visa det som en block
         moreInfo.style.display = "block";
-    } else {
-         // Om elementet redan visas, dölj det
-        moreInfo.style.display = "none";
-    }
+    } 
 }
 // Funktion för att dölja knappen när den klickas på
 function hideButton(button) {
